@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import './App.css';
+import EmailTemplate from './components/EmailTemplate';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentIteration, setCurrentIteration] = useState<'iteration1' | 'iteration2.1' | 'iteration2.2'>('iteration1');
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className="app">
+      <header className="app-header">
+        <h1>Smartcat Translation Completion</h1>
+        <p>Professional email template with interactive project metrics</p>
+      </header>
+
+      <div className="toggle-container">
+        <button 
+          className={`toggle-btn ${currentIteration === 'iteration1' ? 'active' : ''}`}
+          onClick={() => setCurrentIteration('iteration1')}
+        >
+          Iteration 1
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        <button 
+          className={`toggle-btn ${currentIteration === 'iteration2.1' ? 'active' : ''}`}
+          onClick={() => setCurrentIteration('iteration2.1')}
+        >
+          Iteration 2.1
+        </button>
+        <button 
+          className={`toggle-btn ${currentIteration === 'iteration2.2' ? 'active' : ''}`}
+          onClick={() => setCurrentIteration('iteration2.2')}
+        >
+          Iteration 2.2
+        </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <div className="email-container">
+        <EmailTemplate iteration={currentIteration} />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
