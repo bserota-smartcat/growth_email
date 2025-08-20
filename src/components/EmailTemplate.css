@@ -1,10 +1,10 @@
 /* Email Template Styles */
 .email-template {
-  max-width: 650px;
+  max-width: 600px;
   margin: 0 auto;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: #f8fafc;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .email-card {
@@ -17,7 +17,7 @@
 
 /* Header Styles */
 .email-header {
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
   color: white;
   padding: 2.5rem 2rem;
   position: relative;
@@ -155,13 +155,13 @@
 .completion-box {
   background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
   border: 1px solid #a7f3d0;
-  border-radius: 12px;
-  padding: 2rem;
+  border-radius: 16px;
+  padding: 2.5rem;
   margin-bottom: 2.5rem;
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+  gap: 1.5rem;
+  box-shadow: 0 8px 25px -5px rgba(16, 185, 129, 0.15);
   position: relative;
   overflow: hidden;
 }
@@ -178,16 +178,16 @@
 
 .completion-checkmark {
   color: #10b981;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: bold;
   background: white;
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
 }
 
 .completion-text {
@@ -211,7 +211,7 @@
 
 .cta-button {
   display: inline-block;
-  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
   color: white;
   text-decoration: none;
   padding: 1.25rem 2.5rem;
@@ -219,7 +219,7 @@
   font-weight: 700;
   font-size: 1.2rem;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px -5px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 8px 25px -5px rgba(102, 126, 234, 0.4);
   position: relative;
   overflow: hidden;
   letter-spacing: 0.025em;
@@ -242,7 +242,7 @@
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 35px -8px rgba(99, 102, 241, 0.5);
+  box-shadow: 0 12px 35px -8px rgba(102, 126, 234, 0.5);
 }
 
 .cta-subtext {
@@ -267,14 +267,15 @@
 }
 
 .metric-card {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: white;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 2rem;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .metric-card::before {
@@ -284,7 +285,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  background: linear-gradient(90deg, #667eea, #764ba2);
 }
 
 .metric-card:hover {
@@ -316,11 +317,12 @@
 }
 
 .metric-value {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  color: #6366f1;
+  color: #667eea;
   margin-bottom: 0.5rem;
   letter-spacing: -0.025em;
+  line-height: 1;
 }
 
 .metric-label {
@@ -735,7 +737,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  background: linear-gradient(90deg, #667eea, #764ba2);
 }
 
 .dashboard-card:hover {
@@ -769,7 +771,7 @@
 .card-value {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #6366f1;
+  color: #667eea;
   letter-spacing: -0.025em;
   line-height: 1;
 }
