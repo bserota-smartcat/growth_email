@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "name": "Smartcat Email Mockup",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.git": true,
+      "**/.vite": true,
+      "**/dist": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "bradlc.vscode-tailwindcss",
+      "esbenp.prettier-vscode",
+      "ms-vscode.vscode-typescript-next"
+    ]
+  }
+}
