@@ -3,7 +3,7 @@ import './App.css';
 import EmailTemplate from './components/EmailTemplate';
 
 function App() {
-  const [currentIteration, setCurrentIteration] = useState<'iteration1' | 'iteration2.1' | 'iteration2.2'>('iteration1');
+  const [currentIteration, setCurrentIteration] = useState<'iteration1' | 'iteration2' | 'iteration3'>('iteration1');
 
   return (
     <div className="app">
@@ -20,16 +20,16 @@ function App() {
           Iteration 1
         </button>
         <button 
-          className={`toggle-btn ${currentIteration === 'iteration2.1' ? 'active' : ''}`}
-          onClick={() => setCurrentIteration('iteration2.1')}
+          className={`toggle-btn ${currentIteration === 'iteration2' ? 'active' : ''}`}
+          onClick={() => setCurrentIteration('iteration2')}
         >
-          Iteration 2.1
+          Iteration 2
         </button>
         <button 
-          className={`toggle-btn ${currentIteration === 'iteration2.2' ? 'active' : ''}`}
-          onClick={() => setCurrentIteration('iteration2.2')}
+          className={`toggle-btn ${currentIteration === 'iteration3' ? 'active' : ''}`}
+          onClick={() => setCurrentIteration('iteration3')}
         >
-          Iteration 2.2
+          Iteration 3
         </button>
       </div>
 
