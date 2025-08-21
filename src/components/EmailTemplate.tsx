@@ -6,6 +6,7 @@ interface EmailTemplateProps {
 }
 
 const EmailTemplate: React.FC<EmailTemplateProps> = ({ iteration }) => {
+  // Component for displaying email templates with different iterations
   const handleDownloadClick = () => {
     window.open('smartcat-project-mockup.html?source=email&highlight=download', '_blank');
   };
