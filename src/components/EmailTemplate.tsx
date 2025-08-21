@@ -192,33 +192,8 @@ const EmailTemplate: React.FC<EmailTemplateProps> = ({ iteration }) => {
                   </div>
                 </div>
 
-                {/* AI Efficiency Bar */}
-                <div className="efficiency-bar">
-                  <div className="efficiency-labels">
-                    <span>AI Translation (85%)</span>
-                    <span>Human Review (15%)</span>
-                  </div>
-                  <div className="efficiency-visual">
-                    <div className="ai-segment" style={{ width: '85%' }}></div>
-                    <div className="human-segment" style={{ width: '15%' }}></div>
-                  </div>
-                </div>
-
-                {/* ROI & Benefits */}
-                <div className="roi-section">
-                  <h3>ROI & Benefits</h3>
-                  <ul className="benefits-list">
-                    <li>⚡ 12x faster than traditional translation</li>
-                    <li>💰 60% cost reduction</li>
-                    <li>🎯 94.2% accuracy maintained</li>
-                    <li>🔄 Consistent terminology across all content</li>
-                  </ul>
-                </div>
-              </div>
-
               {/* Project Timeline */}
               <div className="timeline-section">
-                <h3>Project Timeline</h3>
                 <div className="timeline">
                   <div className="timeline-station completed">
                     <div className="station-circle"></div>
