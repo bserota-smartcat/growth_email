@@ -31,30 +31,22 @@ const EmailTemplate: React.FC<EmailTemplateProps> = ({ iteration }) => {
               </div>
             </div>
           </div>
-          <div className="main-message">Your translation is ready!</div>
-          <div className="project-name">Marketing Campaign - One-pager about LQA.pdf</div>
+          <div className="main-message">Translation Complete!</div>
         </div>
 
         {/* Email Body */}
         <div className="email-body">
           <div className="greeting">Hi [First Name],</div>
           <div className="message">
-            Great news! Your translation project <strong>'Marketing Campaign - One-pager about LQA.pdf'</strong> has been completed and is ready for download.
-          </div>
-
-          {/* Translation Complete Confirmation */}
-          <div className="completion-box">
-            <span className="completion-checkmark">✓</span>
-            <span className="completion-text">Translation Complete</span>
-            <div className="completion-subtext">All files have been translated, reviewed, and quality-checked</div>
+            Your translation project <strong>[Project Name]</strong> has been completed and is ready for download. Exciting times! 🎉
           </div>
 
           {/* CTA Button */}
           <div className="cta-section">
             <a href="#" onClick={handleDownloadClick} className="cta-button">
-              Download Your Files
+              Download Files
             </a>
-            <div className="cta-subtext">Access your project in Smartcat platform</div>
+            <div className="cta-subtext">Access your project in Smartcat</div>
           </div>
 
           {/* Iteration-specific content */}
@@ -296,28 +288,7 @@ const EmailTemplate: React.FC<EmailTemplateProps> = ({ iteration }) => {
         </div>
       </div>
 
-      {/* Project Performance Dashboard */}
-      {iteration === 'iteration1' && (
-        <div className="performance-dashboard">
-          <h2>Project Performance Dashboard</h2>
-          <div className="dashboard-cards">
-            <div className="dashboard-card">
-              <div className="card-header">
-                <span className="card-arrow">↗</span>
-                <span className="card-change">+15% vs avg</span>
-              </div>
-              <div className="card-value">4,500,500</div>
-            </div>
-            <div className="dashboard-card">
-              <div className="card-header">
-                <span className="card-arrow">↗</span>
-                <span className="card-change">+10% faster</span>
-              </div>
-              <div className="card-value">14</div>
-            </div>
-          </div>
-        </div>
-      )}
+
     </div>
   );
 };
